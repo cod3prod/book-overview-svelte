@@ -7,6 +7,7 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			$assets: './src/assets',
+			$styles: './src/styles',
 			$routes: './src/routes',
 			$lib: './src/lib',
 			$components: './src/components'

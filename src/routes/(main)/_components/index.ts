@@ -1,3 +1,4 @@
-export { default as ChapterPreview } from './ChapterPreview.svelte';
+// export { default as ChapterPreview } from './ChapterPreview.svelte';
+export * from './chapter-preview';
 export { default as AboutTheAuthor } from './AboutTheAuthor.svelte';
-export { default as FaqContainer } from './FaqContainer.svelte';
+export * from './faq';

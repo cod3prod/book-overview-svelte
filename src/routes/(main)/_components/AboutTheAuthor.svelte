@@ -1,12 +1,13 @@
 <script lang="ts">
 	import authorPic from '$assets/profile_pic.jpg';
+	import Container from '$components/layout/Container.svelte';
 </script>
 
-<section class="landing-page-section">
-	<h2 class="mb-l">About the author</h2>
-	<div class="author-container">
-		<div class="author-text">
-			<p class="mb-xs">
+<Container>
+	<h2 class="mb-16">About the author</h2>
+	<div class="flex justify-between">
+		<div class="w-[55%]">
+			<p class="mb-2">
 				Niklas Fischer is a seasoned expatriate with over seven years of experience living in Spain.
 				Originally from New York, John left behind the hustle of corporate America to embrace a more
 				fulfilling life on the sun-soaked coasts of Spain. Through his own journey, he has navigated
@@ -21,27 +22,10 @@
 				lifestyle he once dreamed of.
 			</p>
 		</div>
-		<img src={authorPic} alt="Author Niklas Fischer" />
+		<img
+			class="w-[40%] border-6 border-black shadow-lg shadow-black/50"
+			src={authorPic}
+			alt="Author Niklas Fischer"
+		/>
 	</div>
-</section>
-
-<style>
-	.author-container {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.author-container img {
-		width: 40%;
-		border: 6px solid black;
-		box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
-	}
-
-	.author-text {
-		width: 55%;
-	}
-
-	/* .author-text p:not(:last-of-type) {
-      margin-bottom: 8px;
-    } */
-</style>
+</Container>
